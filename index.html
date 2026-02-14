@@ -1,99 +1,46 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>The Layered Sovereign: Interactive Saga</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Manga Universe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="stars"></div>
-
-<header class="hero">
-    <h1>The Layered Sovereign</h1>
-    <p>From Mortal Death to Infinite Ascension</p>
-    <div class="power-box">
-        Divine Power Level: <span id="power">1</span>
-    </div>
+<header>
+    <h1>Manga Universe</h1>
+    <select id="bookSelector">
+        <option value="book1">Book 1</option>
+        <option value="book2">Book 2</option>
+        <option value="book3">Book 3</option>
+        <option value="book4">Book 4</option>
+        <option value="book5">Book 5</option>
+        <option value="book6">Book 6</option>
+        <option value="book7">Book 7</option>
+        <option value="book8">Book 8</option>
+        <option value="book9">Book 9</option>
+        <option value="book10">Book 10</option>
+        <option value="book11">Book 11</option>
+        <option value="book12">Book 12</option>
+        <option value="book13">Book 13</option>
+        <option value="book14">Book 14</option>
+        <option value="book15">Book 15</option>
+    </select>
 </header>
 
-<section class="chapter" id="prologue">
-    <h2>Prologue: The Truck</h2>
-    <img src="images/twins.png" alt="Twin Goddesses">
-    <p>
-        Rain. Headlights. Metal roared. A truck ended your mortal life.
-        Darkness consumed all — then a god appeared.
-        You were granted the forbidden class: <strong>GOD</strong>.
-    </p>
-</section>
-
-<section class="chapter" id="forest">
-    <h2>Forest of Death</h2>
-    <p>
-        Reborn as a female elf. Infinite Storage unlocked. Spear summoned.
-        Fire, Wind, Conjunction, and Black magic awakened.
-        Monsters fell. Levels rose infinitely.
-    </p>
-</section>
-
-<section class="chapter" id="twins">
-    <h2>The Twin Goddesses</h2>
-    <div class="card-container">
-        <div class="card glow" data-name="luminara" onclick="showProfile('luminara')">
-            <h3>Luminara</h3>
-            <img src="images/twins.png" alt="Luminara">
-        </div>
-        <div class="card glow" data-name="velisara" onclick="showProfile('velisara')">
-            <h3>Velisara</h3>
-            <img src="images/twins.png" alt="Velisara">
+<main id="content">
+    <div class="page">
+        <img src="https://picsum.photos/600/800" alt="Manga Scene">
+        <div class="text">
+            <h2>Chapter 1</h2>
+            <p id="storyText">
+                This is where your expanded story will appear.
+                We will later inject thousands of words here dynamically.
+            </p>
         </div>
     </div>
-    <div class="profile-box" id="profile-box">
-        <span class="close" onclick="closeProfile()">X</span>
-        <div id="profile-content"></div>
-    </div>
-</section>
-
-<section class="chapter" id="bosses">
-    <h2>Major Bosses Defeated</h2>
-    <ul class="boss-list">
-        <li data-boss="goblinlord" onclick="showBoss('goblinlord')">Goblin Lord</li>
-        <li data-boss="xarthul" onclick="showBoss('xarthul')">Demon Lord Xarthul</li>
-        <li data-boss="kaelis" onclick="showBoss('kaelis')">Void Emperor Kaelis</li>
-        <li data-boss="orion" onclick="showBoss('orion')">Celestial King Orion</li>
-        <li data-boss="prime" onclick="showBoss('prime')">Layer Guardian Prime</li>
-    </ul>
-    <div class="boss-profile" id="boss-profile">
-        <span class="close" onclick="closeBoss()">X</span>
-        <div id="boss-content"></div>
-    </div>
-</section>
-
-<section class="chapter" id="mock-battle">
-    <h2>The Mock Battle</h2>
-    <img src="images/lionfang.png" alt="Lion Fang Party">
-    <p>
-        You fought the Summoner God. Stars shattered. Dimensions bent.
-        You emerged victorious. The twins married his sons.
-        Balance sealed.
-    </p>
-    <button id="fusion-btn">Activate Twin Fusion</button>
-    <div id="fusion-animation"></div>
-</section>
-
-<section class="chapter" id="cloud-kingdom">
-    <h2>The Cloud Kingdom</h2>
-    <p>
-        You, the Summoner God, the twins, their husbands, and Lion Fang
-        live above reality in a floating citadel. Peace at last.
-    </p>
-</section>
-
-<footer>
-    End of Ascension
-</footer>
+</main>
 
 <script src="script.js"></script>
 </body>
 </html>
-
