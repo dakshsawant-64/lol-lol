@@ -1,55 +1,47 @@
-body { 
+body {
     margin: 0;
-    font-family: Georgia, serif;
-    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
     background: black;
-    overflow-x: hidden;
+    padding: 15px;
+    text-align: center;
 }
 
-.stars {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(white 1px, transparent 1px);
-    background-size: 40px 40px;
-    animation: moveStars 60s linear infinite;
-    z-index: -1;
+h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
-@keyframes moveStars { from { transform: translateY(0); } to { transform: translateY(-1000px); } }
+select {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
 
-.hero { text-align: center; padding: 100px 20px; background: rgba(0,0,20,0.8); }
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
-h1 { font-size: 3em; color: gold; }
-h2 { color: #ffd700; margin-top: 40px; }
+.page {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+}
 
-.chapter { padding: 60px 10%; }
+.page img {
+    width: 400px;
+    height: auto;
+    border: 3px solid white;
+}
 
-.power-box { margin-top: 20px; font-size: 1.2em; color: #00ffff; }
-
-.card-container { display: flex; gap: 20px; flex-wrap: wrap; }
-.card { background: rgba(20,20,40,0.9); padding: 20px; border-radius: 10px; flex:1; min-width:250px; cursor:pointer; transition: transform 0.3s ease; text-align:center; }
-.card img { max-width:100%; border-radius:8px; margin-top:10px; }
-.card:hover { transform: scale(1.05); }
-
-.glow { box-shadow:0 0 20px gold; animation:aura 2s infinite alternate; }
-@keyframes aura { from{box-shadow:0 0 10px gold;} to{box-shadow:0 0 30px #ffcc00;} }
-
-.profile-box, .boss-profile, #fusion-animation { display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(20,20,40,0.95); padding:30px; border-radius:12px; max-width:500px; z-index:100; color:#fff; }
-.profile-box .close, .boss-profile .close { position:absolute; top:10px; right:20px; cursor:pointer; font-weight:bold; font-size:20px; }
-
-.boss-list li { margin:10px 0; cursor:pointer; transition:color 0.2s ease; }
-.boss-list li:hover { color: cyan; }
-
-#fusion-animation { width:300px; height:300px; background: radial-gradient(circle, gold, transparent 70%); border-radius:50%; animation: spin 2s linear infinite; }
-@keyframes spin { from{transform:translate(-50%,-50%) rotate(0deg);} to{transform:translate(-50%,-50%) rotate(360deg);} }
-
-.panel-container { display:flex; overflow-x: auto; gap:20px; margin:20px 0; }
-.panel { flex: 0 0 auto; width:300px; border-radius:8px; border: 2px solid gold; }
-
-.modal { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); display:flex; align-items:center; justify-content:center; z-index:200; }
-.modal-content { background:rgba(30,30,60,0.95); padding:40px; text-align:center; border-radius:12px; color:#fff; }
-.modal-content button { margin:10px; padding:10px 20px; font-size:1em; cursor:pointer; border:none; border-radius:8px; background:gold; color:black; transition:0.2s ease; }
-.modal-content button:hover { background:#ffd700; }
-
-footer { text-align:center; padding:40px; background:rgba(0,0,20,0.9); }
+.text {
+    max-width: 500px;
+    overflow-y: auto;
+    max-height: 800px;
+}
