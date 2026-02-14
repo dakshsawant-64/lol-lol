@@ -1,4 +1,4 @@
-// Language Data
+// Language Data 
 const texts = {
     en: {
         title: "The Layered Sovereign",
